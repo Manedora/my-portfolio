@@ -1,0 +1,210 @@
+* { box-sizing: border-box; }
+:root {
+  --red: #ff3348;
+  --red-bright: #ff4056;
+  --text: #f8f5f7;
+  --muted: #d4cbd0;
+  --glass: rgba(30, 22, 28, .53);
+  --border: rgba(255, 232, 239, .32);
+}
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: #08070a;
+  color: var(--text);
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; }
+.hero {
+  min-height: 630px;
+  height: 62vw;
+  max-height: 850px;
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: #10090d url("anime-samurai-bg.png") center 24% / cover no-repeat;
+}
+.hero-shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,.12) 0%, rgba(0,0,0,.12) 48%, #09080b 100%);
+}
+.glass {
+  background: var(--glass);
+  border: 1px solid var(--border);
+  box-shadow: 0 0 22px rgba(255, 43, 66, .12), inset 0 0 18px rgba(255,255,255,.025);
+  backdrop-filter: blur(13px);
+  -webkit-backdrop-filter: blur(13px);
+}
+.intro {
+  position: relative;
+  z-index: 1;
+  width: min(720px, calc(100% - 42px));
+  padding: 35px 32px 31px;
+  border-radius: 30px;
+  text-align: center;
+  transform: translateY(18px);
+}
+.eyebrow {
+  color: #ff9ba7;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .23em;
+  margin: 0 0 12px;
+}
+h1 {
+  font-size: clamp(29px, 4.4vw, 44px);
+  line-height: 1.25;
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: -.04em;
+  text-shadow: 0 0 20px rgba(255, 48, 67, .2);
+}
+h1 span { color: #fff; }
+.red-line {
+  width: 90px;
+  height: 3px;
+  margin: 23px auto 18px;
+  border-radius: 9px;
+  background: var(--red);
+  box-shadow: 0 0 18px var(--red);
+}
+.intro-text {
+  max-width: 570px;
+  margin: 0 auto;
+  color: #f1e8ec;
+  font-size: clamp(14px, 1.8vw, 18px);
+  line-height: 1.8;
+}
+.scroll-cue {
+  position: absolute;
+  bottom: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-size: 9px;
+  letter-spacing: .2em;
+  color: #e3d7dd;
+  opacity: .85;
+  z-index: 1;
+}
+.scroll-cue span { width: 7px; height: 7px; background: var(--red); border-radius: 50%; box-shadow: 0 0 10px var(--red); }
+.projects-section, .contact-section {
+  position: relative;
+  padding: 30px 20px 35px;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(106, 27, 39, .2), transparent 55%),
+    linear-gradient(180deg, #09080b, #0d0b0f 70%, #09080b);
+}
+.section-heading {
+  max-width: 740px;
+  margin: 0 auto 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+.section-heading span {
+  height: 1px;
+  flex: 1;
+  max-width: 200px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.28));
+}
+.section-heading span:last-child { transform: rotate(180deg); }
+h2 { margin: 0; font-size: clamp(22px, 3vw, 28px); font-weight: 700; }
+.project-grid {
+  width: min(710px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 20px;
+}
+.project-card {
+  min-height: 104px;
+  padding: 20px 14px 16px;
+  border-radius: 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+}
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 65, 85, .8);
+  box-shadow: 0 0 26px rgba(255, 43, 66, .2);
+}
+.project-card h3 { font-size: 14px; margin: 0 0 8px; font-weight: 700; }
+.project-card p { margin: 0; font-size: 12px; line-height: 1.65; color: #f0e7eb; }
+.featured {
+  width: min(710px, 100%);
+  margin: 27px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 9px 12px;
+  text-align: center;
+}
+.feature-rule {
+  flex: 1 1 45px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #ff5366);
+}
+.feature-rule:last-of-type { background: linear-gradient(90deg, #ff5366, transparent); }
+.featured h3 { font-size: clamp(14px, 2vw, 18px); font-style: italic; margin: 0 0 7px; }
+.featured p { font-size: 11px; margin: 0; color: #e9dfe4; }
+.featured p b { color: var(--red); padding: 0 3px; }
+.github-link { display: inline-flex; align-items: center; gap: 5px; font-size: 10px; font-weight: 600; text-decoration: none; white-space: nowrap; }
+.github-link svg { width: 15px; height: 15px; }
+.contact-section {
+  border-top: 1px solid rgba(255,255,255,.16);
+  padding-top: 30px;
+  padding-bottom: 22px;
+  text-align: center;
+  background:
+    radial-gradient(ellipse at 50% 15%, rgba(255, 35, 60, .09), transparent 55%),
+    #0b090d;
+}
+.contact-section .section-heading { margin-bottom: 12px; }
+.contact-copy { color: #c9bec4; font-size: 13px; margin: 0 auto 25px; }
+.contact-panel {
+  width: min(520px, 100%);
+  min-height: 100px;
+  margin: 0 auto;
+  border-radius: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 42px;
+}
+.social { display: inline-flex; align-items: center; justify-content: center; width: 43px; height: 43px; text-decoration: none; transition: transform .2s ease, filter .2s ease; }
+.social:hover { transform: translateY(-4px) scale(1.06); filter: drop-shadow(0 0 9px currentColor); }
+.social svg { width: 39px; height: 39px; }
+.github { color: #f7f4f5; }
+.email { color: #ff4358; }
+.footer-note { margin: 24px 0 0; font-size: 10px; color: #a99da4; letter-spacing: .04em; }
+.footer-note span { color: var(--red); }
+@media (min-width: 900px) {
+  .hero { min-height: 680px; }
+  .projects-section, .contact-section { padding-left: 8vw; padding-right: 8vw; }
+  .project-grid { gap: 18px 24px; }
+}
+@media (max-width: 540px) {
+  .hero { min-height: 610px; height: 88vh; max-height: 790px; background-position: 48% top; }
+  .hero-shade { background: linear-gradient(180deg, rgba(0,0,0,.05), rgba(0,0,0,.2) 45%, #09080b 100%); }
+  .intro { padding: 28px 19px 25px; border-radius: 23px; transform: translateY(8px); }
+  .eyebrow { font-size: 9px; letter-spacing: .16em; }
+  .intro-text { font-size: 13px; line-height: 1.8; }
+  .projects-section, .contact-section { padding-left: 16px; padding-right: 16px; }
+  .project-grid { gap: 11px; }
+  .project-card { min-height: 105px; padding: 17px 9px 13px; border-radius: 14px; }
+  .project-card h3 { font-size: 12px; }
+  .project-card p { font-size: 10px; }
+  .featured { gap: 8px; }
+  .featured p { line-height: 1.8; }
+  .contact-panel { min-height: 88px; gap: 34px; }
+}
