@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1024">
+  <meta name="description" content="My personal portfolio and selected work">
+  <title>My Portfolio | Designer & Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Go to home">N<span>.</span></a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Main navigation">
+      <a class="active" href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a>
+      <a href="#certificates">Certificates</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="#contact">Get in Touch <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="pulse"></span> HELLO, WELCOME TO MY WORLD</p>
+        <h1>I’m <span class="pink">[Your Name]</span> <span class="flower">✿</span></h1>
+        <h2><span class="typed" data-words="Web Developer,UI Designer,Tech Enthusiast">Web Developer</span><span class="caret">|</span></h2>
+        <p class="hero-description">I turn ideas into beautiful, fast, and useful digital experiences. Explore my skills, learning journey, and selected projects.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">View Projects <span>↙</span></a>
+          <a class="button secondary" href="#about">More About Me</a>
+        </div>
+        <div class="socials" aria-label="Social links">
+          <a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub">GH</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+          <a href="mailto:hello@example.com" aria-label="Email">@</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="hero-glow"></div>
+        <div class="profile-frame">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=85" alt="Portrait photo for portfolio" onerror="this.style.display='none';this.parentElement.classList.add('no-image')">
+          <div class="image-fallback">✿</div>
+        </div>
+        <div class="floating-card card-code"><span class="mini-dot"></span> &lt; creative.dev /&gt;</div>
+        <div class="floating-card card-status"><span class="status-dot"></span> Available for work</div>
+        <span class="sparkle sparkle-one">✦</span><span class="sparkle sparkle-two">✿</span>
+      </div>
+    </section>
+
+    <div class="tech-strip" aria-label="Technologies">
+      <span>✳ HTML</span><span>◈ CSS</span><span>⌘ JavaScript</span><span>⚛ React</span><span>◉ Git & GitHub</span>
+    </div>
+
+    <section class="section about-section" id="about">
+      <div class="section-heading"><p class="eyebrow">A LITTLE ABOUT ME</p><h2>About <span class="pink">Me</span> <span class="flower">✿</span></h2><p>A mix of creativity, code, and curiosity</p></div>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>I’m a developer who enjoys building modern websites and simple, intuitive user experiences. I love learning new tools, solving problems, and turning ideas into real products.</p>
+          <p>This is placeholder copy. Replace it with your own introduction, specialty, and goals.</p>
+          <a class="text-link" href="#contact">Let’s talk <span>←</span></a>
+          <div class="stats">
+            <div><strong>03<span>+</span></strong><small>Years of Experience</small></div>
+            <div><strong>12<span>+</span></strong><small>Projects Completed</small></div>
+            <div><strong>08<span>+</span></strong><small>Technologies Learned</small></div>
+          </div>
+        </div>
+        <div class="about-cards">
+          <article class="info-card"><div class="info-icon">✧</div><h3>My Philosophy</h3><p>Thoughtful design and clean code: every detail should contribute to a better experience.</p></article>
+          <article class="info-card"><div class="info-icon">♡</div><h3>My Mission</h3><p>Build fast, accessible, beautiful products that solve real problems.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-heading"><p class="eyebrow">TOOLS IN MY TOOLKIT</p><h2>My <span class="pink">Skills</span> ✿</h2><p>The skills I use to turn ideas into reality</p></div>
+      <div class="skills-grid">
+        <article class="skill-card"><div class="skill-top"><span class="skill-symbol">5</span><strong>HTML</strong><b>90%</b></div><div class="progress"><span style="--level:90%"></span></div><small>Semantic, accessible structure</small></article>
+        <article class="skill-card"><div class="skill-top"><span class="skill-symbol">✳</span><strong>CSS</strong><b>85%</b></div><div class="progress"><span style="--level:85%"></span></div><small>Responsive layouts and animation</small></article>
+        <article class="skill-card"><div class="skill-top"><span class="skill-symbol">JS</span><strong>JavaScript</strong><b>75%</b></div><div class="progress"><span style="--level:75%"></span></div><small>Client-side interactions and logic</small></article>
+        <article class="skill-card"><div class="skill-top"><span class="skill-symbol">⚛</span><strong>React</strong><b>65%</b></div><div class="progress"><span style="--level:65%"></span></div><small>Component-based user interfaces</small></article>
+        <article class="skill-card"><div class="skill-top"><span class="skill-symbol">⌘</span><strong>Git</strong><b>70%</b></div><div class="progress"><span style="--level:70%"></span></div><small>Version control and collaboration</small></article>
+        <article class="skill-card"><div class="skill-top"><span class="skill-symbol">✎</span><strong>UI / UX</strong><b>60%</b></div><div class="progress"><span style="--level:60%"></span></div><small>Layouts, prototyping, and user experience</small></article>
+      </div>
+      <p class="hint">These percentages are examples. Adjust them to reflect your actual skill levels.</p>
+    </section>
+
+    <section class="section" id="certificates">
+      <div class="section-heading"><p class="eyebrow">MY LEARNING JOURNEY</p><h2><span class="flower">✿</span> Certificates & Courses <span class="flower">✿</span></h2><p>Courses and professional achievements</p></div>
+      <div class="three-grid">
+        <article class="certificate card"><div class="card-top"><span class="badge">Web Development</span><span class="year">2025</span></div><h3>Frontend Development Fundamentals</h3><p>Platform or institution name</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a class="text-link" href="#contact">View Certificate ↗</a></article>
+        <article class="certificate card"><div class="card-top"><span class="badge">Programming</span><span class="year">2024</span></div><h3>Practical JavaScript</h3><p>Platform or institution name</p><div class="tags"><span>ES6+</span><span>DOM</span><span>API</span></div><a class="text-link" href="#contact">View Certificate ↗</a></article>
+        <article class="certificate card"><div class="card-top"><span class="badge">Design</span><span class="year">2024</span></div><h3>UI / UX Fundamentals</h3><p>Platform or institution name</p><div class="tags"><span>Figma</span><span>Wireframe</span><span>UI</span></div><a class="text-link" href="#contact">View Certificate ↗</a></article>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="section-heading"><p class="eyebrow">WHAT I’VE BUILT</p><h2>Selected <span class="pink">Projects</span></h2><p>A few examples of my style and skills</p></div>
+      <div class="projects-grid">
+        <article class="project-card"><div class="project-preview preview-one"><span class="preview-mark">✿</span><span class="preview-label">LUNA / STUDIO</span><div class="preview-line"></div></div><div class="project-body"><div class="card-top"><h3>Creative Landing Page</h3><span class="project-number">01</span></div><p>A responsive landing page with a minimal design and subtle animations.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div><div class="project-links"><a href="https://github.com/" target="_blank" rel="noreferrer">Source Code ↗</a><a href="#contact">Live Demo ↗</a></div></div></article>
+        <article class="project-card"><div class="project-preview preview-two"><div class="dashboard"><div></div><div></div><div></div><span>OVERVIEW</span></div></div><div class="project-body"><div class="card-top"><h3>Admin Dashboard</h3><span class="project-number">02</span></div><p>A dashboard interface for presenting information with cards and sample charts.</p><div class="tags"><span>JavaScript</span><span>CSS Grid</span><span>UI</span></div><div class="project-links"><a href="https://github.com/" target="_blank" rel="noreferrer">Source Code ↗</a><a href="#contact">Live Demo ↗</a></div></div></article>
+        <article class="project-card"><div class="project-preview preview-three"><div class="weather-sun">☼</div><span>YOUR DAY, YOUR WAY</span><div class="weather-temp">24°</div></div><div class="project-body"><div class="card-top"><h3>Weather App</h3><span class="project-number">03</span></div><p>A simple weather app concept with a mobile-friendly interface.</p><div class="tags"><span>API</span><span>JavaScript</span><span>Responsive</span></div><div class="project-links"><a href="https://github.com/" target="_blank" rel="noreferrer">Source Code ↗</a><a href="#contact">Live Demo ↗</a></div></div></article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-panel"><div class="contact-copy"><p class="eyebrow">HAVE A PROJECT IN MIND?</p><h2>Let’s build something <span class="pink">beautiful</span> ✿</h2><p>Reach out for collaborations, job opportunities, or just a friendly chat.</p><a class="button primary" href="mailto:hello@example.com">Send an Email <span>↗</span></a></div><div class="contact-orb">✿</div></div>
+      <div class="contact-details"><a href="mailto:hello@example.com"><span>✉</span> hello@example.com</a><a href="https://github.com/" target="_blank" rel="noreferrer"><span>⌘</span> GitHub</a><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><span>in</span> LinkedIn</a></div>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand" href="#home">N<span>.</span></a><p>Made with love and a little caffeine <span class="pink">♡</span></p><a href="#home" class="back-top">Back to top ↑</a><small>© <span id="year"></span> [Your Name]. All rights reserved.</small></footer>
+</body>
+</html>
